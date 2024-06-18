@@ -112,5 +112,69 @@ body{
 
 .day-name, .day-number, .year{
     margin-left: 8px;
+}
 
+.dot-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    color: #efefef;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.dot-menu{
+    z-index: 999;
+    /* position: absolute; */
+    
+    list-style: none;
+    background: #353e54;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-format-text{
+    color: #efefef;
+    font-size: 0.9em;
+    margin-right: 20px;
+}
+
+.format-switch-btn{
+    width: 35px;
+    height: 15px;
+    background: #485470;
+    border-radius: 75px;
+    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.1)
+                inset -2px -2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.format-switch-btn:before{
+    background: #ff5e9a;
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px #ff5e9a;
+    transform: translateX(-10px);
+    transition: 0.3s ease;
+    transition-property: background, transform;
+}
+
+.format-switch-btn.active:before{
+    background: #0bff8d;
+    box-shadow: 0 5px 25px #0bff8d;
+    transform: translateX(10px);
 }
