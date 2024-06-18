@@ -36,7 +36,7 @@ body{
     justify-content: center;
 }
 
-.hour, .dots, .minutes{
+.hours, .dots, .minutes{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ body{
     line-height: 125px;
 }
 
-.hour, .minutes{
+.hours, .minutes{
     font-size: 6.5em;
     width: 125px;
 }
@@ -55,7 +55,7 @@ body{
     font-size: 5em;
 }
 
-.hour{
+.hours{
     background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
