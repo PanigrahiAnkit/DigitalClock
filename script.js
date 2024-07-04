@@ -21,7 +21,7 @@ function clock() {
     var seconds = now.getSeconds();
     let period = 'AM';
     
-    //Set period to PM if hours is greater than or equal to 12
+    //Setting period to PM if hours is greater than or equal to 12
     if (hours >= 12) {
         period = 'PM';
     }
@@ -62,3 +62,5 @@ document.querySelector(".day-name").innerHTML = dayName;
 document.querySelector(".day-number").innerHTML = dayNumber;
 document.querySelector(".month-name").innerHTML = monthName;
 document.querySelector(".year").innerHTML = year;
+
+
